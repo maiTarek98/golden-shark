@@ -239,7 +239,7 @@ strong {
 }
 
 .reviews-group strong {
-  font-size: var(--h3-font-size);
+  font-size: var(--h5-font-size);
   margin-right: 10px;
 }
 
@@ -780,10 +780,11 @@ strong {
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  background-image: url('../images/businessman-sitting-by-table-cafe.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #fff;
+  /*background-image: url('../images/businessman-sitting-by-table-cafe.jpg');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -821,7 +822,7 @@ strong {
   z-index: 2;
   overflow: hidden;
   margin: auto;
-  padding: 25px 45px;
+  padding: 15px 40px;
 }
 
 .custom-block-info {
