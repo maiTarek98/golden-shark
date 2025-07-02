@@ -841,16 +841,41 @@ strong {
   line-height: 1.8;
 }
 
+.faq-section h5 {
+  font-size: 1.25rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 8px;
+}
+
+.accordion-button {
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.accordion-button:hover {
+  background-color: #f1f1f1;
+  color: var(--primary-color);
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  font-size: 0.95rem;
+}
 
 /*---------------------------------------
-  THE BOOK SECTION            
+  THE Product SECTION            
 -----------------------------------------*/
-.book-section-info {
+.product-section-info {
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
 }
-
+.product-section-info i{
+  margin-left: 5px;
+}
 .nav-pills {
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius-medium);
@@ -901,24 +926,42 @@ strong {
 }
 /**/
 
-.product-section {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
-  align-items: center;
-}
-.product-section img {
-  max-width: 100%;
-  width: 100%; /* عدّلي النسبة حسب التصميم */
-  height: 180px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.product-section:hover {
-  transform: scale(1.02);
-}
+  .product-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+  }
 
+  .product-section:hover {
+    transform: scale(1.01);
+  }
+
+  .product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+  }
+
+  .product-features {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  .product-features li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .product-features li i {
+    margin-left: 8px;
+  }
 /*---------------------------------------
   AUTHOR SECTION            
 -----------------------------------------*/
@@ -994,9 +1037,9 @@ strong {
 
 
 /*---------------------------------------
-  EBOOK DOWNLOAD FORM               
+  product DOWNLOAD FORM               
 -----------------------------------------*/
-.ebook-download-form {
+.product-download-form {
   border-radius: var(--border-radius-medium);
   position: relative;
   z-index: 2;
@@ -1093,7 +1136,7 @@ strong {
 }
 
 .social-icon-link:hover {
-  background: var(--primary-color);
+  background: #8b6305;
   color: var(--white-color);
 }
 .offers-section {
@@ -1169,13 +1212,13 @@ strong {
     padding-bottom: 5px;
   }
 
-  .book-section-info {
+  .product-section-info {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
   }
 
-  .ebook-download-form {
+  .product-download-form {
     padding: 30px;
   }
 }

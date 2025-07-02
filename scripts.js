@@ -1,8 +1,18 @@
 $(document).ready(function() {
-    
   (function ($) {
   
   "use strict";
+    $('.product-img').each(function() {
+      const originalSrc = $(this).attr('src');
+      const hoverSrc = $(this).data('hover');
+      if (hoverSrc) {
+        $(this).hover(
+          function () { $(this).attr('src', hoverSrc); },
+          function () { $(this).attr('src', originalSrc); }
+        );
+      }
+    });
+  
 
     // MENU
     $('.navbar-collapse a').on('click',function(){

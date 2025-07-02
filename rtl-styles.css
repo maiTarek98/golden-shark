@@ -1,0 +1,122 @@
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .avatar-image-left {
+  right: -10px;
+  left: auto;
+}
+
+html[dir="rtl"] .avatar-image-left + .avatar-image-left {
+  right: -20px;
+  left: auto;
+}
+
+html[dir="rtl"] .avatar-image-left + .avatar-image-left + .avatar-image-left {
+  right: -30px;
+  left: auto;
+}
+
+html[dir="rtl"] .avatar-image-left + .avatar-image-left + .avatar-image-left + .avatar-image-left {
+  right: -40px;
+  left: auto;
+}
+
+html[dir="rtl"] .book-section-info,
+html[dir="rtl"] .scrollspy-example-2 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+html[dir="rtl"] .navbar-brand-icon::after {
+  left: -5px;
+  right: auto;
+  transform: rotate(-65deg);
+}
+
+html[dir="rtl"] .navbar-nav .nav-link {
+  text-align: right;
+}
+
+html[dir="rtl"] .custom-form .form-control {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+html[dir="rtl"] .custom-form .input-group-text {
+  left: 0;
+  right: auto;
+}
+
+html[dir="rtl"] .link {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-section,
+html[dir="rtl"] .contact-section,
+html[dir="rtl"] .featured-section,
+html[dir="rtl"] .custom-block {
+  text-align: right;
+}
+
+html[dir="rtl"] ul li,
+html[dir="rtl"] p {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .whatsapp-float {
+  left: 25px;
+  right: auto;
+}
+
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .me-3 {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+}
+
+html[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+html[dir="rtl"] .pe-3 {
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+
+html[dir="rtl"] .ps-3 {
+  padding-right: 1rem !important;
+  padding-left: 0 !important;
+}
+
+html[dir="rtl"] .ms-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .float-end {
+  float: left !important;
+}
+
+html[dir="rtl"] .float-start {
+  float: right !important;
+}
+
+html[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
