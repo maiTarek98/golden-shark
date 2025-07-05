@@ -1190,7 +1190,7 @@ strong {
     width: 48% !important;
   }
     .featured-section::after {
-  position: relative !important;
+  display: none;
 }
   h1 {
     font-size: 48px;
@@ -1347,4 +1347,23 @@ strong {
     transform: none;
     opacity: 1;
   }
+
+  .btn-order-now-mobile {
+    padding: 2px 6px;
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+
+  html[dir="rtl"] .me-3 {
+    margin-left: 4rem !important;
+  }
+
+  .navbar-brand span{
+    font-size: 12px !important;
+  }
+
+  .position-relative  .img-fluid{
+    width: 100% !important;
+  }
+
 }
