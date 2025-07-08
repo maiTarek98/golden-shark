@@ -22,6 +22,10 @@
         <a href="https://wa.me/message/G53CHIEHMLA3N1" class="whatsapp-float" target="_blank">
           <i class="fab fa-whatsapp"></i>
         </a>
+        <a href="#" id="backToTop" class="back-to-top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+
         <main>
             <nav class="navbar navbar-expand-lg" style="direction: ltr;">
                 <div class="container">
@@ -41,22 +45,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto me-lg-4">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">المنتجات</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">من نحن؟</a>
-                            </li>
-
+                        <ul class="navbar-nav ms-lg-auto me-lg-4" style="direction:rtl">
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_1">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">من نحن؟</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">المنتجات</a>
                             </li>
                         </ul>
                         <div class="d-none d-lg-block">
                             <a href="#order-form" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                                <i class="btn-icon bi-cloud-download"></i>
-                                <span>اطلب الآن</span><!-- duplicated above one for mobile -->
+                                <i class="btn-icon bi-box"></i>
+                                <span>اطلب الآن</span>
                             </a>
                         </div>
                     </div>
@@ -87,11 +90,10 @@
                             </div>
                             <div class="home-button"></div>
                         </div>
-
                         <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0 mt-5">
-                            <h6>Explore Our Collection</h6>
-                            <h1 class="text-white mb-5 mt-5">High-quality products displayed in realistic 3D</h1>
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Discover More</a>
+                            <h6>تسوق تشكيلتنا المختارة</h6>
+                            <h1 class="text-white mb-5 mt-5">منتجات عالية الجودة بتصميم واقعي ثلاثي الأبعاد</h1>
+                            <a href="#section_3" class="btn custom-btn smoothscroll me-3">اكتشف المزيد</a>
                         </div>
                     </div>
                 </div>
@@ -192,10 +194,14 @@
                               <li><i class="fas fa-thermometer-half text-danger"></i> مقاوم للخدش ودرجة حرارة من -40 إلى 99 درجة</li>
                               <li><i class="fas fa-check-circle text-success"></i> آمن للغسالة ومثالي للتقديم والاستخدام اليومي</li>
                               <li><i class="fas fa-star text-warning"></i> مناسب للضيافة، التنظيم، والمناسبات</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="طقم صينيتين أكريليك من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Trays.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -213,10 +219,14 @@
                               <li><i class="fas fa-check-circle text-success"></i> آمن للغسالة ومثالي للتقديم والاستخدام اليومي</li>
                               <li><i class="fas fa-star text-warning"></i> تصميم عصري وجذاب يخطف الأنظار.</li>
                               <li><i class="fas fa-star text-warning"></i> لضيافة أنيقة لكل كوب شاي وقهوة وسناك صغير.</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="طقم أطباق تقديم أكريليك  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Small plates.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
 
@@ -232,10 +242,14 @@
                               <li><i class="fas fa-check-circle text-success"></i> آمن للغسالة ومثالي للتقديم والاستخدام اليومي</li>
                               <li><i class="fas fa-star text-warning"></i> اختيار مثالي لكل بيت بيحب التقديم الراقي من غير قلق.</li>
                               <li><i class="fas fa-star text-warning"></i> تصميم ورقة شجر أنيق، مثالي للمقبلات والحلويات.</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="طقم أطباق تقديم أكريليك  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Plates.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                         <div class="product-section row align-items-center">
@@ -250,10 +264,14 @@
                               <li><i class="fas fa-hands-wash text-muted"></i> يُفضل الغسيل اليدوي للحفاظ على اللمعان</li>
                               <li><i class="fas fa-pen text-primary"></i> تصميم أنيق يضفي لمسة ديكورية عصرية</li>
                               <li><i class="fas fa-utensils text-warning"></i> آمنة للأطفال، سهلة التنظيف، ومتعددة الاستخدام سواء في الضيافة أو ديكور البيت العصري.</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="اطبق تقديم على شكل ورقة الشجر  أكريليك  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Big Plates.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                         <div class="product-section row align-items-center">
@@ -268,10 +286,14 @@
                               <li><i class="fas fa-hands-wash text-muted"></i> يُفضل الغسيل اليدوي للحفاظ على اللمعان</li>
                               <li><i class="fas fa-pen text-primary"></i> تصميم أنيق يضفي لمسة ديكورية عصرية</li>
                               <li><i class="fas fa-utensils text-warning"></i> مثالية لتقديم الفواكه، الحلويات، أو كمكون ديكور</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="اطبق تقديم على شكل ورقة الشجر  أكريليك  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Plates2.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -287,10 +309,14 @@
                               <li><i class="fas fa-thermometer-half text-danger"></i> مقاوم للخدش ودرجة حرارة من -40 إلى 99 درجة</li>
                               <li><i class="fas fa-check-circle text-success"></i> آمن للغسالة ومثالي للتقديم والاستخدام اليومي</li>
                               <li><i class="fas fa-star text-warning"></i> تصميم شفاف وأنيق، مثالي للعصائر والمشروبات الباردة</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="طقم أكواب عصير أكريليك PC شفاف  350 مل  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Cups.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
 
@@ -308,10 +334,14 @@
                               <li><i class="fas fa-star text-warning"></i> تصميم فاخر وعصري مثالي للمناسبات والاستخدام اليومي</li>
                               <li><i class="fas fa-leaf text-success"></i> خفيف، مقاوم للكسر، وصديق للبيئة</li>
 
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title=" الكمية:قطعة واحدة (الأبعاد: السعة: 400 مل،  الطول: 14 سم،  القطر: 6 سم)"
+                                      data-price="250"
+                                      data-img="images/Cups2.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -328,10 +358,14 @@
                               <li><i class="fas fa-thermometer-half text-danger"></i> مقاوم للخدش ودرجة حرارة من -40 إلى 99 درجة</li>
                               <li><i class="fas fa-check-circle text-success"></i> خفيفة الوزن، آمنة للاستخدام اليومي، وسهلة التنظيف</li>
                               <li><i class="fas fa-star text-warning"></i> قطعة عملية وأنيقة لكل بيت يحب التفاصيل.</li>
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="بولة تقديم كبيرة أكريليك  PC  شفافة  من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Big Bowl.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
 
@@ -348,11 +382,14 @@
                               <li><i class="fas fa-pen text-primary"></i> تصميم أنيق يضفي لمسة ديكورية عصرية</li>
                               <li><i class="fas fa-star text-warning"></i> يُفضّل غسله قبل الاستخدام الأول</li>
                               <li><i class="fas fa-leaf text-success"></i> تصميم عملي يخزن بسهولة ويوفر مساحة ،ليك دايمًا جاهز للضيافة بشياكة وراحة!</li>
-
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="اطقم خشاف أكريليك  PCمن Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Big Bowl2.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -372,11 +409,14 @@
                               <li><i class="fas fa-pen text-primary"></i> تصميم أنيق يضفي لمسة ديكورية عصرية</li>
                               <li><i class="fas fa-star text-warning"></i>خامة مقاومة للكسر، سهلة التنضيف، وتقدر تخزّنها بسهولة بفضل تصميمها المدمج. </li>
                               <li><i class="fas fa-leaf text-success"></i> مثالية للاستخدام في البيت أو حتى في الخروجات والعزومات الخفيفة</li>
-
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="طقم بولات تقديم أكريليك  PC  شفافة  مل من Golden Shark"
+                                      data-price="250"
+                                      data-img="images/Little Bowl.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -395,11 +435,14 @@
                               <li><i class="fas fa-pen text-primary"></i> تصميم أنيق يضفي لمسة ديكورية عصرية</li>
                               <li><i class="fas fa-star text-warning"></i>مثالية لتقديم الآيس كريم، الفواكه، الحلوى، والمكسرات بشكل أنيق وآمن.</li>
                               <li><i class="fas fa-leaf text-success"></i> مقاومة للكسر والخدوش</li>
-
+                              <li><i class="fa fa-money-bill-wave  text-warning"></i>السعر: 250 ج.م</li>
                             </ul>
-                            <a href="#order-form" class="btn btn-warning btn-sm mt-3 px-4 py-2 fw-bold">
-                              <i class="fas fa-shopping-cart me-1"></i> اطلب الآن
-                            </a>
+                              <button class="btn btn-warning btn-sm mt-3 px-4 py-2 open-modal-btn"
+                                      data-title="الكمية:6 كاسات (الأبعاد: الارتفاع: 9 سم،القطر: 10 سم)"
+                                      data-price="250"
+                                      data-img="images/Ice cream.png">
+                               <i class="fas fa-shopping-cart me-1"></i> اشترِ الآن
+                              </button>
                           </div>
                         </div>
                       </div>
@@ -652,7 +695,81 @@
                     </div>
                 </div>
             </section>
+            <div class="modal fade" id="buyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">طلب المنتج</h5>
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-3">
+          <img id="modal-img" src="" class="img-fluid rounded" style="max-width: 200px;">
+        </div>
+        <h5 id="modal-title" class="text-center mb-2"></h5>
+        <p class="text-center">السعر: <span id="modal-price"></span> ج.م</p>
+
+        <form id="orderForm">
+          <input type="hidden" name="product_name" id="input-product-name">
+          <input type="hidden" name="product_price" id="input-product-price">
+          <div class="mb-2">
+            <input type="text" name="customer_name" class="form-control" placeholder="الاسم">
+          </div>
+          <div class="mb-2">
+            <input type="text" name="customer_phone" class="form-control" placeholder="رقم الهاتف">
+          </div>
+          <div class="mb-3">
+              <select id="province" name="governorate_id" class="form-control" required>
+                <option value="" disabled selected>اختر المحافظة</option>
+                <option>القاهرة</option>
+                <option>الجيزة</option>
+                <option>الإسكندرية</option>
+                <option>البحيرة</option>
+                <option>كفر الشيخ</option>
+                <option>الغربية</option>
+                <option>المنوفية</option>
+                <option>الدقهلية</option>
+                <option>القليوبية</option>
+                <option>دمياط</option>
+                <option>بورسعيد</option>
+                <option>الإسماعيلية</option>
+                <option>السويس</option>
+
+                <option>الفيوم</option>
+                <option>بني سويف</option>
+                <option>المنيا</option>
+                <option>أسيوط</option>
+                <option>سوهاج</option>
+                <option>قنا</option>
+                <option>الأقصر</option>
+                <option>أسوان</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label>تكلفة الشحن:</label>
+              <p id="shippingCost" style="font-weight: bold;">—</p>
+            </div>
+
+            <input type="hidden" name="shipping_amount" id="shipping_amount">
+
+          <div class="mb-2">
+            <textarea name="customer_address" class="form-control" placeholder="العنوان"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning w-100">تأكيد الطلب</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </main>
+  <footer>
+    جميع الحقوق محفوظة © Golden Shark <span id="year"></span>
+  </footer>
+
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -663,12 +780,45 @@
         <script src="click-scroll.js"></script>
         <script src="scripts.js"></script>
         <script>
+  $(document).ready(function() {
+  window.onscroll = function() {
+    const backToTop = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  document.getElementById("backToTop").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+    $('.open-modal-btn').on('click', function() {
+      const title = $(this).data('title');
+      const price = $(this).data('price');
+      const img = $(this).data('img');
+
+      $('#modal-title').text(title);
+      $('#modal-price').text(price);
+      $('#modal-img').attr('src', img);
+
+      $('#input-product-name').val(title);
+      $('#input-product-price').val(price);
+
+      $('#buyModal').modal('show');
+    });
+  });
+</script>
+
+        <script>
         $(document).ready(function() {
-            $('.btn[href="#order-form"]').on('click', function () {
-              var productTitle = $(this).closest('.product-section').find('h5').text().trim();
-              $('#product-name').val(productTitle);
-              $('#product-name-group').removeClass('d-none');
-            });
+            // $('.btn[href="#order-form"]').on('click', function () {
+            //   var productTitle = $(this).closest('.product-section').find('h5').text().trim();
+            //   $('#product-name').val(productTitle);
+            //   $('#product-name-group').removeClass('d-none');
+            // });
 
             $('.product-img').each(function() {
               const originalSrc = $(this).attr('src');
@@ -681,6 +831,32 @@
               }
             });
         });
+
+    const bahary = [
+      'القاهرة', 'الجيزة', 'الإسكندرية', 'البحيرة', 'كفر الشيخ', 'الغربية',
+      'المنوفية', 'الدقهلية', 'القليوبية', 'دمياط', 'بورسعيد', 'الإسماعيلية', 'السويس'
+    ];
+
+    const said = [
+      'الفيوم', 'بني سويف', 'المنيا', 'أسيوط', 'سوهاج',
+      'قنا', 'الأقصر', 'أسوان'
+    ];
+
+    $('#province').on('change', function () {
+      const selected = $(this).val().trim();
+
+      if (bahary.includes(selected)) {
+        $('#shippingCost').text('65 جنيه');
+        $('#shipping_amount').val(65);
+      } else if (said.includes(selected)) {
+        $('#shippingCost').text('100 جنيه');
+        $('#shipping_amount').val(100);
+      } else {
+        $('#shippingCost').text('سيتم تحديد السعر لاحقًا');
+        $('#shipping_amount').val('');
+      }
+    });
+
         </script>
     </body>
 </html>

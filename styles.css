@@ -1178,7 +1178,7 @@ strong {
 
 .offers-section p {
   color: #333;
-  font-size: 18px;
+  font-size: 18px;g 
 }
 
 
@@ -1367,3 +1367,30 @@ strong {
   }
 
 }
+    footer {
+      background-color: #bb8c20;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      color: #fff;
+    }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5b301; 
+    color: white;
+    padding: 12px 17px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+  }
+
+  .back-to-top:hover {
+    background-color: #d49c00;
+    text-decoration: none;
+    color: white;
+  }
