@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GOLDEN SHARK</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="rtl-styles.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="https://wa.me/message/G53CHIEHMLA3N1" class="whatsapp-float" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a><!-- زر أيقونة السلة -->
+        <a href="javascript:void(0)" class="cart-float" id="toggleCartSidebar">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+
+        <a href="#" id="backToTop" class="back-to-top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+                <main>
+            <nav class="navbar navbar-expand-lg" style="direction: ltr; background: #000;">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" class="img-fluid" style="width: 20%;" alt="GOLDEN SHARK">
+                        <span style="font-family: Unbounded;">GOLDEN SHARK</span>
+                    </a>
+
+                    <div class="d-lg-none me-3 mt-2 text-center">
+                      <a href="#order-form" class="btn custom-btn custom-border-btn btn-order-now-mobile shadow-sm">
+                        <i class="bi bi-cart-plus-fill me-2"></i>
+                        اطلب الآن
+                      </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto me-lg-4" style="direction:rtl">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">من نحن؟</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">المنتجات</a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-lg-block">
+                            <a href="#order-form" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
+                                <i class="btn-icon bi-box"></i>
+                                <span>اطلب الآن</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+  <div class="container checkout-page">
+    <h2>إتمام الطلب</h2>
+    <div class="row mt-4">
+      <div class="col-md-8">
+      <form id="orderForm">
+                      <input type="hidden" name="product_name" id="input-product-name">
+                      <input type="hidden" name="product_price" id="input-product-price">
+                      <div class="mb-2">
+                        <input type="text" name="customer_name" class="form-control" placeholder="الاسم">
+                      </div>
+                      <div class="mb-2">
+                        <input type="text" name="customer_phone" class="form-control" placeholder="رقم الهاتف">
+                      </div>
+                      <div class="mb-3">
+                          <select id="province" name="governorate_id" class="form-control" required>
+                            <option value="" disabled selected>اختر المحافظة</option>
+                            <option>القاهرة</option>
+                            <option>الجيزة</option>
+                            <option>الإسكندرية</option>
+                            <option>البحيرة</option>
+                            <option>كفر الشيخ</option>
+                            <option>الغربية</option>
+                            <option>المنوفية</option>
+                            <option>الدقهلية</option>
+                            <option>القليوبية</option>
+                            <option>دمياط</option>
+                            <option>بورسعيد</option>
+                            <option>الإسماعيلية</option>
+                            <option>السويس</option>
+
+                            <option>الفيوم</option>
+                            <option>بني سويف</option>
+                            <option>المنيا</option>
+                            <option>أسيوط</option>
+                            <option>سوهاج</option>
+                            <option>قنا</option>
+                            <option>الأقصر</option>
+                            <option>أسوان</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3">
+                          <label>تكلفة الشحن:</label>
+                          <p id="shippingCost" style="font-weight: bold;">—</p>
+                        </div>
+
+                        <input type="hidden" name="shipping_amount" id="shipping_amount">
+
+                      <div class="mb-2">
+                        <textarea name="customer_address" class="form-control" placeholder="العنوان"></textarea>
+                      </div>
+
+        <!-- زر تأكيد -->
+        <button type="submit" class="btn btn-success w-100 mt-3">
+          تأكيد الطلب
+        </button>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <div class="order-summary">
+        <h4>ملخص الطلب</h4>
+        
+        <div class="summary-items">
+          <div class="summary-item">
+            <span class="item-name">منتج 1</span>
+            <span class="item-qty">×2</span>
+            <span class="item-price">100 ج.م</span>
+          </div>
+          <div class="summary-item">
+            <span class="item-name">منتج 2</span>
+            <span class="item-qty">×1</span>
+            <span class="item-price">250 ج.م</span>
+          </div>
+        </div>
+
+        <div class="summary-total">
+          <strong>الإجمالي:</strong>
+          <span id="summary-total-price">450 ج.م</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+ <section class="reviews-section section-padding container" id="section_4">
+  <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+                                    <div class="col-lg-12 col-12 text-center mb-5">
+                            <h6>تقييمات العملاء</h6>
+                            <h2>ماذا يقول الناس عنا...</h2>
+                        </div>
+
+          <div class="col-6 col-md-3">
+            <img src="images/slider_1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <img src="images/slider_5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_6.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_7.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="images/slider_8.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+            <section class="contact-section section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="faq-section mt-5">
+                              <h5 class="fw-bold mb-4 fw-bold mb-4 text-black">
+                                <i class="fas fa-question-circle me-2 text-black"></i> نسعد دائمًا بخدمتك والإجابة عن استفساراتك
+                              </h5>
+
+                              <div class="accordion" id="faqAccordion" style="width: 65%;">
+                                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
+                                  <h2 class="accordion-header" id="faqOne">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne">
+                                      كيف يمكنني تتبع طلبي؟
+                                    </button>
+                                  </h2>
+                                  <div id="answerOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                      بعد تأكيد الطلب، يتم إرسال رقم تتبع لك عبر الواتساب أو البريد الإلكتروني لتتبع الشحنة بسهولة.
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
+                                  <h2 class="accordion-header" id="faqTwo">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answerTwo">
+                                      هل يمكنني استرجاع المنتج؟
+                                    </button>
+                                  </h2>
+                                  <div id="answerTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                      نعم، يمكنك الاسترجاع خلال 14 يومًا من تاريخ الاستلام بشرط أن يكون المنتج بحالته الأصلية.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <h5 class="mt-5">نحن هنا لمساعدتك  </h5>
+                            <ul class="list-unstyled text-light">
+                              <li class="mb-2"><i class="bi-geo-alt me-2"></i><a href="#" class="contact-link text-light">مصر، المنصورة  </a></li>
+                              <li class="mb-2"><i class="bi-telephone me-2"></i> <a href="tel:+0100200340" class="contact-link text-light">+0100200340</a></li>
+                              <li class="mb-2"><i class="bi-envelope me-2"></i> <a href="mailto:info@company.com" class="contact-link text-light">info@company.com</a></li>
+                            </ul>
+                            <h5 class="site-footer-title mt-5 mb-3">تابعنا على وسائل التواصل الاجتماعي</h5>
+
+                            <ul class="social-icon mb-4">
+                                <li class="social-icon-item">
+                                    <a href="https://www.instagram.com/goldenshark.eg?igsh=M2txN201eDJ2bm9r" class="social-icon-link fab fa-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://www.tiktok.com/@golden.shark41?_t=ZS-8xiLhkWwhFA&_r=1" class="social-icon-link fab fa-tiktok"></a>
+                                </li>
+                                
+                                <li class="social-icon-item">
+                                    <a href="https://www.facebook.com/GoldenShark.eg/" class="social-icon-link fab fa-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://wa.me/message/G53CHIEHMLA3N1" class="social-icon-link fab fa-whatsapp"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-12 mx-auto">
+                            <form class="custom-form product-download-form bg-white shadow" action="#" method="post" role="form" id="order-form">
+                                <div class="text-center mb-5">
+                                    <h5 class="mb-1">يسعدنا تواصلك معنا</h5>
+                                    <span class="text-center text-muted">املأ النموذج وسنقوم بالرد عليك في أقرب وقت ممكن</span>
+                                </div>
+
+                                <div class="product-download-form-body">
+
+                                    <div class="input-group mb-4 d-none" id="product-name-group">
+                                        <input type="text" name="product-name" id="product-name" class="form-control" placeholder="اسم المنتج" readonly>
+                                        <span class="input-group-text">
+                                            <i class="custom-form-icon fa fa-box"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="input-group mb-4">
+                                        <input type="text" name="product-form-name" id="product-form-name" class="form-control" aria-label="product-form-name" aria-describedby="basic-addon1" placeholder="ادخل اسمك*" required="">
+
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="custom-form-icon bi-person"></i>
+                                        </span>
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" name="product-form-mobile" id="product-form-mobile" class="form-control" aria-label="product-form-mobile" aria-describedby="basic-addon1" placeholder="رقم الهاتف*" required="">
+
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="custom-form-icon bi-person"></i>
+                                        </span>
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <input type="email" name="product-email" id="product-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" aria-label="product-form-email" aria-describedby="basic-addon2" >
+
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <i class="custom-form-icon bi-envelope"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="col-lg-8 col-md-10 col-8 mx-auto">
+                                        <button type="submit" class="form-control"><i class="fa fa-rocket"></i> إرسال الرسالة</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+   </main>
+  <footer>
+    جميع الحقوق محفوظة © Golden Shark <span id="year"></span>
+  </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="jquery.sticky.js"></script>
+        <script src="click-scroll.js"></script>
+        <script src="scripts.js"></script>
+<script>
+  document.getElementById('toggleCartSidebar').addEventListener('click', function () {
+    document.getElementById('cart-sidebar').classList.add('show');
+  });
+
+  document.querySelector('.cart-sidebar-close').addEventListener('click', function () {
+    document.getElementById('cart-sidebar').classList.remove('show');
+  });
+
+    const cartSidebar = document.getElementById('cart-sidebar');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const closeCartBtn = document.getElementById('close-cart');
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+
+    let cart = [];
+
+    function updateCartView() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            total += item.price * item.qty; // حساب الإجمالي
+
+            const div = document.createElement('div');
+            div.classList.add('cart-item');
+
+            div.innerHTML = `
+                <div class="item-details cart-item">
+                    <strong>${item.title}</strong><br>
+                    <small>السعر: ${item.price} جنيه</small>
+                </div>
+                <div class="quantity-control">
+                    <button class="increase-btn" onclick="increaseQty(${item.id})">+</button>
+                    <span>${item.qty}</span>
+                    <button class="decrease-btn" onclick="decreaseQty(${item.id})">-</button>
+                </div>
+            `;
+            cartItemsContainer.appendChild(div);
+        });
+
+        // تحديث السعر الكلي في الواجهة
+        document.getElementById('total-price').textContent = total.toFixed(2);
+    }
+
+    function showSidebar() {
+        cartSidebar.classList.add('show');
+    }
+
+    function hideSidebar() {
+        cartSidebar.classList.remove('show');
+    }
+
+    function addToCart(id, title, price) {
+        const existing = cart.find(item => item.id === id);
+        if (existing) {
+            existing.qty += 1;
+        } else {
+            cart.push({ id, title, price, qty: 1 });
+        }
+        updateCartView();
+        showSidebar();
+    }
+
+    function increaseQty(id) {
+        const item = cart.find(i => i.id === id);
+        if (item) {
+            item.qty++;
+            updateCartView();
+        }
+    }
+
+    function decreaseQty(id) {
+        const item = cart.find(i => i.id === id);
+        if (item && item.qty > 1) {
+            item.qty--;
+        } else {
+            cart = cart.filter(i => i.id !== id);
+        }
+        updateCartView();
+        if (cart.length === 0) hideSidebar();
+    }
+
+    addToCartBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = parseInt(btn.dataset.id);
+            const title = btn.dataset.title;
+            const price = parseFloat(btn.dataset.price);
+            addToCart(id, title, price);
+        });
+    });
+
+    closeCartBtn.addEventListener('click', hideSidebar);
+</script>
+
+        <script>
+        $(document).ready(function() {
+            // $('.btn[href="#order-form"]').on('click', function () {
+            //   var productTitle = $(this).closest('.product-section').find('h5').text().trim();
+            //   $('#product-name').val(productTitle);
+            //   $('#product-name-group').removeClass('d-none');
+            // });
+
+            $('.product-img').each(function() {
+              const originalSrc = $(this).attr('src');
+              const hoverSrc = $(this).data('hover');
+              if (hoverSrc) {
+                $(this).hover(
+                  function () { $(this).stop().fadeOut(300, function() { $(this).attr('src', hoverSrc).fadeIn(800); }); },
+                  function () { $(this).stop().fadeOut(300, function() { $(this).attr('src', originalSrc).fadeIn(800); }); }
+                );
+              }
+            });
+        });
+
+    const bahary = [
+      'القاهرة', 'الجيزة', 'الإسكندرية', 'البحيرة', 'كفر الشيخ', 'الغربية',
+      'المنوفية', 'الدقهلية', 'القليوبية', 'دمياط', 'بورسعيد', 'الإسماعيلية', 'السويس'
+    ];
+
+    const said = [
+      'الفيوم', 'بني سويف', 'المنيا', 'أسيوط', 'سوهاج',
+      'قنا', 'الأقصر', 'أسوان'
+    ];
+
+    $('#province').on('change', function () {
+      const selected = $(this).val().trim();
+
+      if (bahary.includes(selected)) {
+        $('#shippingCost').text('65 جنيه');
+        $('#shipping_amount').val(65);
+      } else if (said.includes(selected)) {
+        $('#shippingCost').text('100 جنيه');
+        $('#shipping_amount').val(100);
+      } else {
+        $('#shippingCost').text('سيتم تحديد السعر لاحقًا');
+        $('#shipping_amount').val('');
+      }
+    });
+
+        </script>
+    </body>
+</html>
