@@ -199,7 +199,7 @@ i:before {
 }
 
 .top_header_area .float-start a + a {
-  margin-right: 35px;
+  /*margin-right: 35px;*/
 }
 
 .top_header_area .float-end .h_social {
@@ -555,7 +555,7 @@ i:before {
 
 .product__details__breadcrumb {
   margin-bottom: 45px;
-  margin-top: 45px;
+  margin-top: 60px;
 }
 
 .product__details__breadcrumb a {
