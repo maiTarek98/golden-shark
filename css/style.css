@@ -107,7 +107,9 @@ i:before {
   top: 0px;
   z-index: 30;
 }
-
+.bg-light{
+  background: rgb(248 249 250 / 13%) !important;
+}
 .main_header_area + section, .main_header_area + div, .main_header_area + .row {
   margin-top: 135px;
 }
@@ -594,7 +596,30 @@ i:before {
         height: 45px;
         border: none;
     }
-
+.product-features li {
+    position: relative;
+    background-color: #f9f9f987;
+    padding: 7px 7px;
+    margin-bottom: 6px;
+    /* border-left: 4px solid #0d6efd; */
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.product-features li:hover {
+    background-color: #fdfbbe52;
+    transform: translateX(5px);
+}
+.border-bottom {
+    list-style: none !important;
+}
+.list-unstyled {
+    list-style: disc !important;
+}
+.price-span{
+  color: #dab04e;
+}
     .pro-qty {
         display: flex;
         align-items: center;
@@ -632,7 +657,8 @@ i:before {
 }
 
 .product__details__text {
-  text-align: center;
+  text-align: justify;
+  height: 100%;
 }
 
 .product__details__text h4 {
@@ -640,11 +666,6 @@ i:before {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
-.product__details__text .rating {
-  margin-bottom: 20px;
-}
-
 .product__details__text .rating i {
   font-size: 15px;
   color: #f7941d;
@@ -1222,4 +1243,187 @@ i:before {
 .reviews-section h2{
     color: #dab04e;
 
+}
+
+
+.all {
+   width: 100%;
+   height: auto;
+   display: inline-block;
+   position: relative;
+}
+
+.all .slider {
+   border-radius: 3px;
+   border-radius: 10px;
+   position: relative;
+}
+
+
+.item-box {
+   background: #fcfcfc;
+   border-radius: 12px;
+   overflow: hidden;
+   display: flex;
+   width: 100%;
+   aspect-ratio: 22 / 18;
+   position: relative;
+   background-size: cover;
+}
+
+.car-single .item-box {
+   aspect-ratio: 11 / 7;
+   border-radius: 18px;
+   -webkit-border-radius: 18px;
+   -moz-border-radius: 18px;
+   -ms-border-radius: 18px;
+   -o-border-radius: 18px;
+}
+
+.stick-next-to li {
+   padding: 1rem 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.car-info li:not(:last-child) {
+   border-bottom: 1px solid #ddd;
+}
+
+.car-info {
+   background-color: var(--dark-gray);
+   margin-bottom: 10px;
+   border: unset !important;
+   border-radius: 24px;
+   padding: 2rem;
+   -webkit-border-radius: 24px;
+   -moz-border-radius: 24px;
+   -ms-border-radius: 24px;
+   -o-border-radius: 24px;
+}
+
+.item-box:after {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+   content: "";
+   display: block;
+}
+
+.item-box img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.all .slider-two .item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.single-img .owl-dots {
+   display: none;
+}
+
+.all .slider-two {
+   width: auto;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 0;
+   z-index: 1;
+   margin-top: 15px;
+}
+
+.all .slider-two .item {
+   transition: all ease .25s;
+   height: 110px;
+   border: solid 2px transparent;
+   cursor: pointer;
+   overflow: hidden;
+   border-radius: 8px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+   position: absolute;
+   z-index: 9;
+   top: calc(50% - 20px);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background: var(--white) !important;
+}
+
+.owl-nav .owl-prev {
+   inset-inline-start: 1rem;
+}
+
+.owl-nav .owl-next {
+   inset-inline-end: 1rem;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+   color: #000;
+}
+
+.all .slider-two .item.active {
+   border: solid 1px var(--white);
+   box-shadow: 0px 3px 6px #00000029;
+}
+
+.all .slider-two .owl-stage {
+   padding: 15px 0 30px;
+}
+
+
+.cta-section {
+  background-image: url('../img/kitchen-cta-bg.jpg'); /* صورة خلفية ناعمة لأدوات مطبخ أو طاولة أنيقة */
+  background-size: cover; /* ✅ عشان الصورة تظهر كاملة */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; /* أو أي ارتفاع مناسب */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: white;
+}
+
+.cta-bg-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay نصف شفاف */
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #dab04e;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #deb85f;
 }

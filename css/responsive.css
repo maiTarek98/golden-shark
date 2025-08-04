@@ -591,7 +591,7 @@
 		display: none;
 	}
 	.main_header_area + section, .main_header_area + div, .main_header_area + .row {
-		margin-top: 167px;
+		/*margin-top: 167px;*/
 	}
 	.cake_feature_slider .cake_feature_slider {
 		top: -130px;
@@ -962,7 +962,7 @@
 		right: -10px;
 	}
 	.main_header_area + section, .main_header_area + div, .main_header_area + .row {
-		margin-top: 202px;
+		/*margin-top: 202px;*/
 	}
 	.blog_item {
 		margin-bottom: 50px;
