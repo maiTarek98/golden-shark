@@ -832,9 +832,22 @@
 	}
 }
 @media(max-width: 480px){
+	.top_header_area .float-start a
+	{
+		font-size: 12px !important;
+	}
 	.main_title h2 {
 		font-size: 26px;
 	}
+	.btn-primary-custom {
+    font-size: 12px;
+}
+.product_feature_item .product_text h3 {
+    font-size: 13px;
+}
+.product_feature_item .product_text h4 {
+    font-size: 12px;
+}
 	.special_recipe_slider .owl-dots {
 		position: relative;
 		right: 0px;
