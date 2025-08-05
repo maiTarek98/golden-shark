@@ -70,7 +70,7 @@
         				</button>
         				<div class="collapse navbar-collapse" id="navbarSupportedContent">
         					<ul class="navbar-nav mr-auto">
-        						<li class="active"><a href="contact.html">الرئيسية</a></li>
+        						<li class="active"><a href="contact.html"><i class="fa fa-home fa-lg"></i> الرئيسية</a></li>
         						<li class="me-5"><a href="contact.html">من نحن </a></li>
         					</ul>
         					<ul class="navbar-nav me-auto">
@@ -171,11 +171,19 @@
         							</div>
         							<span class="text-muted small">5 مراجعات</span>
         						</div>
-
         						<!-- السعر -->
         						<li class="fs-5 border-bottom py-2 mb-4">
-        							<strong>السعر:</strong> <span class="fw-bold price-span">250 ج.م</span>
+        							<strong>السعر:</strong> <span class="fw-bold price-span">150 ج.م</span> <span class="old-price">250 ج.م</span>
         						</li>
+										<div class="countdown-wrapper mb-3">
+										  <h4>العرض ينتهي خلال</h4>
+										  <div id="countdown">
+										    <div><span id="days">00</span><label>يوم</label></div>
+										    <div><span id="hours">00</span><label>ساعة</label></div>
+										    <div><span id="minutes">00</span><label>دقيقة</label></div>
+										    <div><span id="seconds">00</span><label>ثانية</label></div>
+										  </div>
+										</div>
         						<!-- عنوان المميزات -->
         						<h6 class="text-dark fw-bold mb-2">مميزات المنتج:</h6>
 
@@ -205,6 +213,52 @@
         			</div>
         		</div>
         	</div>      
+        </section>
+        <section class="service_we_offer_area">
+        	<div class="container">
+        		<div class="row we_offer_inner">
+						  <div class="col-lg-4">
+						    <div class="s_we_item gray_s_item">
+						      <div class="media row">
+						        <div class="d-flex col-md-3">
+    									<i class="fas fa-shield-alt"></i>
+						        </div>
+						        <div class="media-body col-md-9">
+						          <a href="#"><h4>شحن مؤمّن</h4></a>
+						          <p>جميع الشحنات مؤمنة ضد الكسر لضمان وصول منتجاتك بأمان.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col-lg-4">
+						    <div class="s_we_item gray_s_item">
+						      <div class="media row">
+						        <div class="d-flex col-md-3">
+    									<i class="fas fa-box-open"></i>
+						        </div>
+						        <div class="media-body col-md-9">
+						          <a href="#"><h4>معاينة قبل الاستلام</h4></a>
+						          <p>افحص منتجك قبل ما تستلمه، وتأكد إنه مطابق للطلب تماماً.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col-lg-4">
+						    <div class="s_we_item gray_s_item">
+						      <div class="media row">
+						        <div class="d-flex col-md-3">
+						          <i class="fas fa-exchange-alt"></i>
+						        </div>
+						        <div class="media-body col-md-9">
+						          <a href="#"><h4>استرجاع واستبدال</h4></a>
+						          <p>معاك 14 يوم للاسترجاع أو الاستبدال بدون أي مشاكل.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+        	</div>
         </section>
         <section class="container cta-section my-5 py-4 px-3 text-center position-relative overflow-hidden">
         	<div class="cta-content position-relative">
@@ -335,8 +389,8 @@
         		<div class="row">
         			<div class="col-lg-6 col-12">
         				<div class="faq-section mt-5">
-        					<h5 class="fw-bold mb-4 fw-bold mb-4 text-black">
-        						<i class="fas fa-question-circle me-2 text-black"></i> نسعد دائمًا بخدمتك والإجابة عن استفساراتك
+        					<h5 class="fw-bold mb-4 fw-bold mb-4 text-white">
+        						<i class="fas fa-question-circle text-white"></i> نسعد دائمًا بخدمتك والإجابة عن استفساراتك
         					</h5>
 
         					<div class="accordion" id="faqAccordion" style="width: 65%;">
@@ -368,13 +422,13 @@
         					</div>
         				</div>
 
-        				<h5 class="mt-5">نحن هنا لمساعدتك  </h5>
+        				<p class="fw-bold mt-5 mb-3 text-white">نحن هنا لمساعدتك  </p>
         				<ul class="list-unstyled text-light">
         					<li class="mb-2"><i class="bi-geo-alt me-2"></i><a href="#" class="contact-link text-light">مصر، المنصورة  </a></li>
         					<li class="mb-2"><i class="bi-telephone me-2"></i> <a href="tel:+0100200340" class="contact-link text-light">+0100200340</a></li>
         					<li class="mb-2"><i class="bi-envelope me-2"></i> <a href="mailto:info@company.com" class="contact-link text-light">info@company.com</a></li>
         				</ul>
-        				<h5 class="site-footer-title mt-5 mb-3">تابعنا على وسائل التواصل الاجتماعي</h5>
+        				<p class="site-footer-title fw-bold mt-5 mb-3 text-white">تابعنا على وسائل التواصل الاجتماعي</p>
 
         				<ul class="social-icon mb-4">
         					<li class="social-icon-item">
@@ -486,7 +540,7 @@
         						<div class="mb-2">
         							<textarea name="customer_address" class="form-control" placeholder="العنوان"></textarea>
         						</div>
-        						<div class="col-lg-8 col-md-10 col-8 mx-auto">
+        						<div class="col-lg-8 col-md-10 col-8 mx-auto mt-4">
         							<button type="submit" class="form-control"><i class="fa fa-rocket"></i> إرسال الرسالة</button>
         						</div>
         					</div>
@@ -565,6 +619,31 @@
             $('#product-name-group').removeClass('d-none');
         });
     });
+  // عدد الثواني المتبقية للعرض (مثلاً: يوم + ساعة + 30 دقيقة)
+  let totalSeconds = (1 * 24 * 60 * 60) + (1 * 60 * 60) + (30 * 60); // = 1 يوم + 1 ساعة + 30 دقيقة
+
+  function updateCountdown() {
+    let days = Math.floor(totalSeconds / (24 * 60 * 60));
+    let hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+    let minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+    let seconds = totalSeconds % 60;
+
+    // تحديث القيم داخل الصفحة
+    document.getElementById('days').textContent = String(days).padStart(2, '0');
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+    if (totalSeconds > 0) {
+      totalSeconds--;
+    } else {
+      clearInterval(timerInterval);
+      document.querySelector('.countdown-wrapper h4').textContent = "انتهى العرض!";
+    }
+  }
+
+  let timerInterval = setInterval(updateCountdown, 1000);
+  updateCountdown();
 </script>
 
       </body>

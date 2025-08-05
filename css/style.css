@@ -1171,14 +1171,18 @@ i:before {
 
 
 .custom-form button[type="submit"] {
-  background: #FFD700;
-  color: #000;
-  /*font-weight: bold;*/
+  background: #dab04e;
+  color: #fff;
+  font-weight: bold;
+  border-radius:8px !important;
   transition: all 0.3s ease;
+      padding: 8px;
 }
 
 .custom-form button[type="submit"]:hover {
-  background: #FFC300;
+  background: #fff;
+  border: 1px solid #dab04e;
+  color: #dab04e;
 }
 
 .product-download-form {
@@ -1204,22 +1208,23 @@ i:before {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--copyright-font-size);
-  display: block;
-  margin-right: 10px;
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  line-height: 36px;
-  transition: background 0.2s, color 0.2s;
+    display: inline-block;
+    text-align: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 16.92px;
+    line-height: 35px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
 }
 
 .social-icon-link:hover {
-  background: #8b6305;
-  color: var(--white-color);
+  /*color: #dab04e;*/
+  /*border: 1px solid #dab04e;*/
 }
 .offers-section {
   background: linear-gradient(135deg, #fff5d7, #fff9e6);
@@ -1383,11 +1388,11 @@ i:before {
 
 
 .cta-section {
-  background-image: url('../img/kitchen-cta-bg.jpg'); /* صورة خلفية ناعمة لأدوات مطبخ أو طاولة أنيقة */
-  background-size: cover; /* ✅ عشان الصورة تظهر كاملة */
+  background-image: url('../img/kitchen-cta-bg.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh; /* أو أي ارتفاع مناسب */
+  height:60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1400,7 +1405,7 @@ i:before {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Overlay نصف شفاف */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -1427,3 +1432,159 @@ i:before {
 .btn-primary:hover {
   background-color: #deb85f;
 }
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-weight: normal;
+  font-size: 16px;
+}
+  .countdown-wrapper {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 360px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  #countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  #countdown div {
+    background: #ffffff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 70px;
+  }
+
+  #countdown span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+  }
+
+  #countdown label {
+    font-size: 14px;
+    color: #666;
+  }
+.service_we_offer_area .single_w_title {
+  margin-bottom: 50px;
+}
+
+.we_offer_inner {
+  margin-bottom: -30px;
+}
+
+.s_we_item {
+  margin-bottom: 10px;
+  border: 1px dashed #fff;
+  padding: 13px 13px 13px 13px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.s_we_item .media .d-flex {
+  padding-right: 18px;
+}
+
+.s_we_item .media .d-flex i {
+  font-size: 60px;
+  line-height: 96px;
+  color: #fff;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.s_we_item .media .d-flex i:before {
+  font-size: 60px;
+}
+
+.s_we_item .media .media-body h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.s_we_item .media .media-body p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.s_we_item:hover {
+  background: #fff;
+}
+
+.s_we_item:hover .media .d-flex i {
+  color: #242424;
+}
+
+.s_we_item:hover .media .media-body h4 {
+  color: #242424;
+}
+
+.s_we_item:hover .media .media-body p {
+  color: #797979;
+}
+
+.s_we_item.gray_s_item {
+  background: #fff;
+  border: 1px dashed #ababab;
+}
+
+.s_we_item.gray_s_item .media .d-flex i {
+  color: #dab04e;
+}
+
+.s_we_item.gray_s_item .media .media-body h4 {
+  color: #242424;
+}
+
+.s_we_item.gray_s_item .media .media-body p {
+  color: #797979;
+}
+
+.s_we_item.gray_s_item:hover {
+  background: #dab04e;
+  border-color: #dab04e;
+}
+
+.s_we_item.gray_s_item:hover .media .d-flex i {
+  color: #fff;
+}
+
+.s_we_item.gray_s_item:hover .media .media-body h4 {
+  color: #fff;
+}
+
+.s_we_item.gray_s_item:hover .media .media-body p {
+  color: #fff;
+}
+
+.gray_service {
+  background: #e8e8e8;
+}
+
+.white_bg {
+  background: #fff;
+}
+
